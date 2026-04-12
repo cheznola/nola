@@ -96,6 +96,15 @@ body {
   from { opacity:0; transform:translateY(-8px); }
   to   { opacity:1; transform:translateY(0); }
 }
+@keyframes pulse-live {
+  0%,100% { opacity:1; transform:scale(1); }
+  50%      { opacity:.35; transform:scale(.7); }
+}
+.live-dot-badge {
+  width:6px; height:6px; border-radius:50%;
+  background:var(--sage-bg); flex-shrink:0;
+  animation:pulse-live 2.4s ease-in-out infinite;
+}
 
 .fu { opacity:0; animation:fadeUp .65s ease forwards; }
 .d1{animation-delay:.05s}.d2{animation-delay:.15s}.d3{animation-delay:.25s}
@@ -667,7 +676,7 @@ nav {
         </div>
         <div class="how-step">
           <div class="step-num">03</div>
-          <div class="step-body"><strong>Tu reçois les infos</strong><span>Le lieu, l'heure — on s'occupe du reste</span></div>
+          <div class="step-body"><strong>Tu reçois les infos</strong><span>Le lieu, l'heure, on s'occupe du reste</span></div>
         </div>
         <div class="how-step">
           <div class="step-num">04</div>
@@ -677,8 +686,8 @@ nav {
       </div>
       <div class="how-visual">
         <div class="hv-header">
-          <span class="hv-title">Édition en cours</span>
-          <span class="live-badge">Live</span>
+          <span class="hv-title">Prochaine édition</span>
+          <span class="live-badge"><span class="live-dot-badge"></span>Live</span>
         </div>
         <div class="tc-list">
           <div class="tc">
@@ -690,12 +699,12 @@ nav {
             <span class="tc-s s-open">1 place</span>
           </div>
           <div class="tc">
-            <div class="tc-l"><div class="avs"><div class="mav">--</div><div class="mav">--</div><div class="mav">--</div></div><span class="tc-name">Table thématique</span></div>
-            <span class="tc-s s-open">Juin 26</span>
-          </div>
-          <div class="tc">
             <div class="tc-l"><div class="avs"><div class="mav">EM</div><div class="mav">PM</div></div><span class="tc-name">Table Senior</span></div>
             <span class="tc-s s-open">2 places</span>
+          </div>
+          <div class="tc">
+            <div class="tc-l"><div class="avs"><div class="mav">--</div><div class="mav">--</div><div class="mav">--</div></div><span class="tc-name">Table Thématique</span></div>
+            <span class="tc-s s-open">Juin 26</span>
           </div>
           <div class="tc" style="border:1.5px dashed rgba(200,117,66,.4);background:var(--brown-pale);">
             <div class="tc-l"><div class="avs"><div class="mav" style="background:var(--brown-pale);color:var(--brown-deep);">TK</div></div><span class="tc-name" style="color:var(--brown-deep);font-size:12px;">Nola × Le Ticket</span></div>
