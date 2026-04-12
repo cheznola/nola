@@ -243,6 +243,10 @@ nav {
 .mav:first-child { margin-left:0; }
 .tc-name { font-size:13px; font-weight:600; color:var(--ink); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 .tc-s { font-size:10.5px; font-weight:700; border-radius:4px; padding:2px 8px; flex-shrink:0; }
+.tc--partner { border:1.5px dashed rgba(200,117,66,.4); background:var(--brown-pale); }
+.mav--partner { background:var(--brown-pale); color:var(--brown-deep); }
+.tc-name--partner { color:var(--brown-deep); font-size:12px; }
+.tc-s--partner { background:var(--brown-pale); color:var(--brown-deep); border:1px solid rgba(200,117,66,.3); }
 .s-full { background:var(--cream-2); color:var(--muted); }
 .s-open { background:var(--brown-pale); color:var(--brown-deep); border:1px solid rgba(200,117,66,.2); }
 .hv-foot { font-size:11px; color:var(--muted-lt); text-align:center; padding-top:12px; border-top:1px solid var(--border); line-height:1.6; }
@@ -432,17 +436,15 @@ nav {
   <ul class="nav-center">
     <li><a href="#why">Le concept</a></li>
     <li><a href="#how">Comment ça se passe</a></li>
-    <li><a href="#avis">Avis</a></li>
-    <li><a href="#faq">FAQ</a></li>
     <li>
       <span class="nav-soon">
-        Le projet associatif
+        Nola dans 3 ans
         <span class="nav-soon-badge">Bientôt</span>
       </span>
     </li>
   </ul>
   <div class="nav-right">
-    <a href="https://cheznola.fillout.com/booking" class="nav-cta" target="_blank" rel="noopener">Être prévenu·e →</a>
+    <a href="https://cheznola.fillout.com/booking" class="nav-cta" target="_blank" rel="noopener">Rejoindre Nola →</a>
     <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -456,9 +458,8 @@ nav {
   <a href="#avis">Avis <span>→</span></a>
   <a href="#faq">FAQ <span>→</span></a>
   <a href="#" style="opacity:.5;pointer-events:none;cursor:default;">
-    Le projet associatif <span class="m-soon">Bientôt</span>
+    Nola dans 3 ans <span class="m-soon">Bientôt</span>
   </a>
-  <a href="https://cheznola.fillout.com/booking" class="mobile-cta" target="_blank" rel="noopener">Essayer Nola →</a>
 </div>
 
 <!-- ── HERO ── -->
@@ -475,7 +476,7 @@ nav {
   <p class="hero-sub fu d4">1x/mois. En petit comité.</p>
   <div class="asso-pill fu d4">Association loi 1901 · Paris</div>
   <div class="hero-actions fu d5">
-    <a href="https://cheznola.fillout.com/booking" class="btn-primary" target="_blank" rel="noopener">Être prévenu·e →</a>
+    <a href="https://cheznola.fillout.com/booking" class="btn-primary" target="_blank" rel="noopener">Rejoindre Nola →</a>
   </div>
   <div class="hero-proof fu d5">
     <div class="av-stack">
@@ -574,36 +575,38 @@ nav {
           <div class="step-num">04</div>
           <div class="step-body"><strong>Tu vis l'expérience</strong><span>Des échanges sincères, autour d'un bon dîner.</span></div>
         </div>
-        <a href="https://cheznola.fillout.com/booking" class="btn-primary" style="margin-top:28px;display:inline-flex;" target="_blank" rel="noopener">Être prévenu·e →</a>
+        <a href="https://cheznola.fillout.com/booking" class="btn-primary" style="margin-top:28px;display:inline-flex;" target="_blank" rel="noopener">Accéder aux tables →</a>
       </div>
       <div class="how-visual">
         <div class="hv-header">
-          <span class="hv-title">Prochaine édition</span>
-          <span class="live-badge"><span class="live-dot-badge"></span>Live</span>
+          <span class="hv-title">Composition</span>
+          <span class="live-badge"><span class="live-dot-badge"></span>Avril</span>
         </div>
         <div class="tc-list">
           <div class="tc">
-            <div class="tc-l"><div class="avs"><div class="mav">PM</div><div class="mav">DS</div><div class="mav">DA</div><div class="mav">CT</div></div><span class="tc-name">Table Mid Level</span></div>
+            <div class="tc-l"><div class="avs"><div class="mav">PM</div><div class="mav">PM</div><div class="mav">DS</div><div class="mav">DS</div><div class="mav">DA</div><div class="mav">HoP</div></div><span class="tc-name">Table 1</span></div>
             <span class="tc-s s-full">Complète</span>
           </div>
           <div class="tc">
-            <div class="tc-l"><div class="avs"><div class="mav">PM</div><div class="mav">DS</div><div class="mav">PM</div></div><span class="tc-name">Table Founders</span></div>
+            <div class="tc">
+            <div class="tc-l"><div class="avs"><div class="mav">PM</div><div class="mav">DS</div><div class="mav">PO</div><div class="mav">PM</div><div class="mav">DS</div></div><span class="tc-name">Table 2</span></div>
             <span class="tc-s s-open">1 place</span>
           </div>
+          </div>
           <div class="tc">
-            <div class="tc-l"><div class="avs"><div class="mav">EM</div><div class="mav">PM</div></div><span class="tc-name">Table Senior</span></div>
+            <div class="tc-l"><div class="avs"><div class="mav">EM</div><div class="mav">CPO</div><div class="mav">HoP</div><div class="mav">PM</div><div class="mav">PM</div></div><span class="tc-name">Table 3</span></div>
             <span class="tc-s s-open">2 places</span>
           </div>
           <div class="tc">
-            <div class="tc-l"><div class="avs"><div class="mav">--</div><div class="mav">--</div><div class="mav">--</div></div><span class="tc-name">Table Thématique</span></div>
+            <div class="tc-l"><div class="avs"><div class="mav">TH</div></div><span class="tc-name">Table Thématique</span></div>
             <span class="tc-s s-open">Juin 26</span>
           </div>
-          <div class="tc" style="border:1.5px dashed rgba(200,117,66,.4);background:var(--brown-pale);">
-            <div class="tc-l"><div class="avs"><div class="mav" style="background:var(--brown-pale);color:var(--brown-deep);">TK</div></div><span class="tc-name" style="color:var(--brown-deep);font-size:12px;">Nola × Le Ticket</span></div>
-            <span class="tc-s" style="background:var(--brown-pale);color:var(--brown-deep);border:1px solid rgba(200,117,66,.3);">Bientôt</span>
+          <div class="tc tc--partner">
+          <div class="tc-l"><div class="avs"><div class="mav mav--partner">TK</div></div><span class="tc-name tc-name--partner">Nola × Le Ticket</span></div>
+          <span class="tc-s tc-s--partner">Bientôt</span>
           </div>
         </div>
-        <div class="hv-foot">4 tables par édition · Association loi 1901</div>
+        <div class="hv-foot">4 tables par édition · Le 2ᵉ mardi du mois</div>
       </div>
     </div>
   </div>
@@ -632,9 +635,9 @@ nav {
 <!-- ── ORIGINALS ── -->
 <section class="section-originals" id="originals">
   <div class="orig-header">
-    <span class="eyebrow">Billetterie</span>
+    <span class="eyebrow">Réserver ta place</span>
     <h2>Originals</h2>
-    <p class="orig-lead-bold">4 tables simultanées. Une fois par mois.</p>
+    <p class="orig-lead-bold">4 tables simultanées. 1x/mois.</p>
     <p class="orig-lead">Jamais la même table. Jamais le même resto.</p>
   </div>
   <div class="orig-price">10€</div>
@@ -679,7 +682,7 @@ nav {
   <p class="mid-desc">Déjà +150 Product People curieux de tester à Paris.</p>
   <p class="mid-desc">PM, CPO, Designers, Data… toutes les tables sont différentes.</p>
   <span class="mid-italic">👉 Et toi, tu rejoins laquelle ?</span>
-  <a href="https://cheznola.fillout.com/booking" class="btn-white" target="_blank" rel="noopener">Être prévenu·e →</a>
+  <a href="https://cheznola.fillout.com/booking" class="btn-white" target="_blank" rel="noopener">Rejoindre Nola</a>
 </section>
 
 <!-- ── FAQ ── -->
@@ -735,7 +738,7 @@ nav {
       <span class="footer-hero-logo">Nola.</span>
       <h3>On ne s'inscrit pas.<br><strong>On y est invité.</strong></h3>
       <p>Parce que les meilleures idées naissent...<br>...rarement derrière un écran.</p>
-      <a href="https://cheznola.fillout.com/booking" class="btn-primary" target="_blank" rel="noopener">Être prévenu·e →</a>
+      <a href="https://cheznola.fillout.com/booking" class="btn-primary" target="_blank" rel="noopener">Accéder aux tables →</a>
     </div>
     <div class="footer-hero-img">
       <img src="https://res.cloudinary.com/dtjcum3gb/image/upload/q_auto/f_auto/v1775985223/Nola_footer_q2xscn.png" alt="Ambiance Nola">
