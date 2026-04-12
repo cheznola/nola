@@ -508,14 +508,29 @@ nav {
   .cd-block { flex:1; padding:16px 8px; min-width:0; }
   .cd-n { font-size:32px; letter-spacing:-1.5px; }
 
+  .features-inner { grid-template-columns:1fr; gap:40px; }
+  .features-photo { aspect-ratio:4/3; position:static; width:100%; }
+  .features-grid { grid-template-columns:1fr; }
   .feat-card { border-bottom:1px solid var(--border-2); }
   .feat-card:last-child { border-bottom:none; }
 
   .how-grid { grid-template-columns:1fr; gap:40px; }
   .how-visual { position:static; }
 
-  .features-inner { grid-template-columns:1fr; }
-  .features-photo { aspect-ratio:4/3; position:static; }
+  .avis-card { flex:0 0 100%; }
+
+  .section-originals { padding:64px 16px; }
+  .conv-inner { grid-template-columns:1fr; gap:40px; }
+  .conv-img { aspect-ratio:16/9; }
+  .section-mid-cta { padding:64px 16px; }
+  .section-faq { padding:64px 16px 80px; }
+  .faq-q { font-size:14px; }
+
+  .footer-hero { grid-template-columns:1fr; gap:32px; padding:48px 16px; }
+  .footer-hero-img { display:block; aspect-ratio:16/9; order:-1; }
+  .footer-bar { flex-direction:column; text-align:center; padding:20px 16px; }
+  .footer-links { justify-content:center; }
+}
 
   /* Carousel mobile : 1 carte */
   .avis-card { flex:0 0 100%; }
