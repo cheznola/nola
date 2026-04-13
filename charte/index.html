@@ -1,0 +1,215 @@
+<!--
+  © 2025 Nola — Association loi 1901
+  Site : https://cheznola.fr
+  Tous droits réservés. Reproduction interdite sans autorisation.
+-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="https://res.cloudinary.com/dtjcum3gb/image/upload/q_auto/f_auto/v1766328298/Nola._3_ebrl57.png">
+<title>Charte — Nola</title>
+<meta name="description" content="La charte Nola : confiance, écoute, respect.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://cheznola.fr/charte">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;600;700;800&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --cream:      #F4EFE4;
+  --cream-2:    #EDE7D9;
+  --parchment:  #F9F5EE;
+  --sage:       #6E7E64;
+  --sage-bg:    #5D6E54;
+  --sage-pale:  #EBF0E7;
+  --brown:      #C87542;
+  --brown-deep: #A85E2E;
+  --brown-pale: #F3E8D8;
+  --dark:       #1E1A15;
+  --dark-2:     #2C2720;
+  --ink:        #3A342C;
+  --muted:      #7A7168;
+  --muted-lt:   #A09890;
+  --border:     rgba(58,52,44,.10);
+  --border-2:   rgba(58,52,44,.16);
+  --playpen:    'Playpen Sans', cursive;
+  --serif:      'Instrument Serif', Georgia, serif;
+  --sans:       'Inter', system-ui, sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { background: var(--parchment); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; height: 58px; display: flex; align-items: center; justify-content: space-between; padding: 0 40px; background: rgba(249,245,238,.95); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); }
+.nav-logo { font-family: var(--playpen); font-weight: 700; font-size: 22px; color: var(--brown); text-decoration: none; }
+.nav-center { display: flex; gap: 28px; list-style: none; align-items: center; }
+.nav-center a { font-size: 13px; font-weight: 400; color: var(--muted); text-decoration: none; transition: color .15s; }
+.nav-center a:hover { color: var(--ink); }
+.nav-cta { font-size: 13px; font-weight: 700; color: var(--parchment); background: var(--dark); border: none; border-radius: 6px; padding: 8px 20px; text-decoration: none; transition: background .15s; white-space: nowrap; }
+.nav-cta:hover { background: var(--dark-2); }
+.burger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; }
+.burger span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: all .25s ease; }
+.burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.burger.open span:nth-child(2) { opacity: 0; }
+.burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+@keyframes slideDown { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+.mobile-menu { display: none; position: fixed; top: 54px; left: 0; right: 0; z-index: 190; background: rgba(249,245,238,.98); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 16px 24px 24px; flex-direction: column; animation: slideDown .2s ease; }
+.mobile-menu.open { display: flex; }
+.mobile-menu a { font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: none; padding: 14px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; transition: color .15s; }
+.mobile-menu a:last-of-type { border-bottom: none; }
+.mobile-menu a:hover { color: var(--brown); }
+.mobile-cta { display: block; text-align: center !important; background: var(--brown) !important; color: #fff !important; border-radius: 7px; margin-top: 14px; font-size: 15px !important; font-weight: 700 !important; padding: 14px 0 !important; border-bottom: none !important; justify-content: center !important; }
+
+.page-wrap { max-width: 680px; margin: 0 auto; padding: 100px 24px 96px; }
+.page-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--brown); display: block; margin-bottom: 16px; }
+.page-title { font-family: var(--playpen); font-weight: 800; font-size: clamp(36px, 8vw, 56px); color: var(--ink); line-height: 1.05; margin-bottom: 12px; }
+.page-lead { font-family: var(--serif); font-style: italic; font-size: clamp(16px, 2.5vw, 20px); color: var(--muted); margin-bottom: 48px; line-height: 1.5; }
+.page-divider { width: 48px; height: 3px; background: var(--brown); border-radius: 2px; margin-bottom: 48px; opacity: .4; }
+
+.charte-intro { font-size: 16px; line-height: 1.85; color: var(--ink); margin-bottom: 36px; }
+
+.charte-engagements { background: var(--cream); border: 1px solid var(--border-2); border-radius: 12px; padding: 32px; margin-bottom: 36px; }
+.charte-engagements h2 { font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--brown); margin-bottom: 20px; }
+.engagement-list { list-style: none; display: flex; flex-direction: column; }
+.engagement-list li { display: flex; align-items: flex-start; gap: 14px; font-size: 15px; color: var(--ink); padding: 12px 0; border-bottom: 1px solid var(--border); line-height: 1.55; }
+.engagement-list li:last-child { border-bottom: none; padding-bottom: 0; }
+.engagement-list li:first-child { padding-top: 0; }
+.engagement-check { width: 22px; height: 22px; border-radius: 50%; background: var(--sage-pale); border: 1.5px solid rgba(93,110,84,.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; font-size: 11px; color: var(--sage-bg); font-weight: 800; }
+
+.charte-note { font-size: 14px; color: var(--muted); line-height: 1.75; padding: 20px; background: var(--brown-pale); border-left: 3px solid var(--brown); border-radius: 0 8px 8px 0; margin-bottom: 36px; }
+.charte-note strong { color: var(--ink); }
+
+.charte-closing { font-size: 16px; line-height: 1.85; color: var(--ink); }
+.charte-closing em { font-family: var(--serif); font-style: italic; color: var(--brown); }
+
+.btn-primary { display: inline-flex; align-items: center; gap: 6px; background: var(--brown); color: #fff; font-size: 14px; font-weight: 700; text-decoration: none; padding: 13px 28px; border-radius: 7px; transition: background .15s; }
+.btn-primary:hover { background: var(--brown-deep); }
+.page-cta-block { margin-top: 56px; padding: 32px; background: var(--cream); border: 1px solid var(--border-2); border-radius: 12px; text-align: center; }
+.page-cta-block p { font-size: 15px; color: var(--muted); margin-bottom: 20px; line-height: 1.65; }
+
+.footer-dark { background: var(--dark); }
+.footer-bar { border-top: 1px solid rgba(255,255,255,.07); padding: 24px; max-width: 1120px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.footer-bar-logo { font-family: var(--playpen); font-weight: 800; font-size: 18px; color: var(--brown); }
+.footer-links { display: flex; gap: 20px; list-style: none; flex-wrap: wrap; }
+.footer-links a { font-size: 12px; color: rgba(255,255,255,.28); text-decoration: none; transition: color .15s; }
+.footer-links a:hover { color: rgba(255,255,255,.6); }
+.footer-copy { font-size: 12px; color: rgba(255,255,255,.2); }
+
+@media (max-width: 768px) {
+  nav { padding: 0 16px; height: 54px; }
+  .nav-center { display: none; }
+  .burger { display: flex; }
+  .nav-logo { font-size: 20px; }
+  .nav-cta { font-size: 12px; padding: 7px 14px; }
+  .page-wrap { padding: 88px 16px 72px; }
+  .footer-bar { flex-direction: column; text-align: center; padding: 20px 16px; }
+  .footer-links { justify-content: center; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">Nola.</a>
+  <ul class="nav-center">
+    <li><a href="/#why">Le concept</a></li>
+    <li><a href="/#how">Comment ça se passe</a></li>
+    <li><a href="/manifeste">Manifeste</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <a href="https://cheznola.fillout.com/booking" class="nav-cta" target="_blank" rel="noopener">Rejoindre Nola →</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/#why">Le concept <span>→</span></a>
+  <a href="/#how">Comment ça se passe <span>→</span></a>
+  <a href="/manifeste">Manifeste <span>→</span></a>
+  <a href="/charte">Charte <span>→</span></a>
+  <a href="https://cheznola.fillout.com/booking" class="mobile-cta" target="_blank" rel="noopener">Rejoindre Nola →</a>
+</div>
+
+<div class="page-wrap">
+  <span class="page-eyebrow">Le cadre</span>
+  <h1 class="page-title">Charte Nola</h1>
+  <p class="page-lead">Un espace fondé sur la confiance, l'écoute et le respect.</p>
+  <div class="page-divider"></div>
+
+  <p class="charte-intro">Nola est un espace de rencontres fondé sur la confiance, l'écoute et le respect. En participant aux rencontres, chacun s'engage à respecter ce cadre.</p>
+
+  <div class="charte-engagements">
+    <h2>En participant, tu t'engages à</h2>
+    <ul class="engagement-list">
+      <li>
+        <span class="engagement-check">✓</span>
+        Adopter une posture bienveillante et respectueuse
+      </li>
+      <li>
+        <span class="engagement-check">✓</span>
+        Ne pas utiliser les tables à des fins de prospection commerciale
+      </li>
+      <li>
+        <span class="engagement-check">✓</span>
+        Respecter la confidentialité des échanges
+      </li>
+      <li>
+        <span class="engagement-check">✓</span>
+        Contribuer à la qualité du collectif
+      </li>
+    </ul>
+  </div>
+
+  <div class="charte-note">
+    <strong>Nola privilégie la qualité des échanges à la quantité de participants.</strong><br>
+    Le non-respect de cette charte peut entraîner l'exclusion des futures rencontres.
+  </div>
+
+  <p class="charte-closing">Ce cadre n'est pas une contrainte. C'est ce qui rend les conversations <em>vraiment possibles.</em></p>
+
+  <div class="page-cta-block">
+    <p>Tu adhères à cette charte ? Rejoins une table.</p>
+    <a href="https://cheznola.fillout.com/booking" class="btn-primary" target="_blank" rel="noopener">Rejoindre Nola →</a>
+  </div>
+</div>
+
+<div class="footer-dark">
+  <div class="footer-bar">
+    <span class="footer-bar-logo">Nola.</span>
+    <ul class="footer-links">
+      <li><a href="/manifeste">Manifeste</a></li>
+      <li><a href="/charte">Charte</a></li>
+      <li><a href="/conditions">Conditions</a></li>
+      <li><a href="/confidentialite">Confidentialité</a></li>
+      <li><a href="/mentions">Mentions légales</a></li>
+      <li><a href="mailto:hello@cheznola.fr">Contact</a></li>
+    </ul>
+    <span class="footer-copy">© 2025 Nola · Association loi 1901</span>
+  </div>
+</div>
+
+<script>
+(function () {
+  var burger = document.getElementById('burger');
+  var menu = document.getElementById('mobileMenu');
+  if (!burger || !menu) return;
+  burger.addEventListener('click', function () {
+    var open = menu.classList.toggle('open');
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', String(open));
+  });
+  menu.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      menu.classList.remove('open');
+      burger.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+</body>
+</html>
