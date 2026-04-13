@@ -1,0 +1,195 @@
+<!--
+  © 2025 Nola — Association loi 1901
+  Site : https://cheznola.fr
+  Tous droits réservés. Reproduction interdite sans autorisation.
+-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="https://res.cloudinary.com/dtjcum3gb/image/upload/q_auto/f_auto/v1766328298/Nola._3_ebrl57.png">
+<title>Mentions légales — Nola</title>
+<meta name="description" content="Mentions légales du site cheznola.fr.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://cheznola.fr/mentions">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;600;700;800&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --cream:      #F4EFE4;
+  --cream-2:    #EDE7D9;
+  --parchment:  #F9F5EE;
+  --sage:       #6E7E64;
+  --sage-bg:    #5D6E54;
+  --sage-pale:  #EBF0E7;
+  --brown:      #C87542;
+  --brown-deep: #A85E2E;
+  --brown-pale: #F3E8D8;
+  --dark:       #1E1A15;
+  --dark-2:     #2C2720;
+  --ink:        #3A342C;
+  --muted:      #7A7168;
+  --muted-lt:   #A09890;
+  --border:     rgba(58,52,44,.10);
+  --border-2:   rgba(58,52,44,.16);
+  --playpen:    'Playpen Sans', cursive;
+  --serif:      'Instrument Serif', Georgia, serif;
+  --sans:       'Inter', system-ui, sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { background: var(--parchment); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; height: 58px; display: flex; align-items: center; justify-content: space-between; padding: 0 40px; background: rgba(249,245,238,.95); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); }
+.nav-logo { font-family: var(--playpen); font-weight: 700; font-size: 22px; color: var(--brown); text-decoration: none; }
+.nav-center { display: flex; gap: 28px; list-style: none; align-items: center; }
+.nav-center a { font-size: 13px; font-weight: 400; color: var(--muted); text-decoration: none; transition: color .15s; }
+.nav-center a:hover { color: var(--ink); }
+.nav-cta { font-size: 13px; font-weight: 700; color: var(--parchment); background: var(--dark); border: none; border-radius: 6px; padding: 8px 20px; text-decoration: none; transition: background .15s; white-space: nowrap; }
+.nav-cta:hover { background: var(--dark-2); }
+.burger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; }
+.burger span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: all .25s ease; }
+.burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.burger.open span:nth-child(2) { opacity: 0; }
+.burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+@keyframes slideDown { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+.mobile-menu { display: none; position: fixed; top: 54px; left: 0; right: 0; z-index: 190; background: rgba(249,245,238,.98); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 16px 24px 24px; flex-direction: column; animation: slideDown .2s ease; }
+.mobile-menu.open { display: flex; }
+.mobile-menu a { font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: none; padding: 14px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; transition: color .15s; }
+.mobile-menu a:last-of-type { border-bottom: none; }
+.mobile-menu a:hover { color: var(--brown); }
+.mobile-cta { display: block; text-align: center !important; background: var(--brown) !important; color: #fff !important; border-radius: 7px; margin-top: 14px; font-size: 15px !important; font-weight: 700 !important; padding: 14px 0 !important; border-bottom: none !important; justify-content: center !important; }
+
+.page-wrap { max-width: 680px; margin: 0 auto; padding: 100px 24px 96px; }
+.page-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--brown); display: block; margin-bottom: 16px; }
+.page-title { font-weight: 800; font-size: clamp(28px, 5vw, 40px); color: var(--ink); line-height: 1.1; margin-bottom: 12px; letter-spacing: -1px; }
+.page-lead { font-size: 15px; color: var(--muted); margin-bottom: 48px; line-height: 1.65; }
+.page-divider { width: 48px; height: 3px; background: var(--brown); border-radius: 2px; margin-bottom: 48px; opacity: .4; }
+
+.mentions-block { margin-bottom: 36px; padding-bottom: 36px; border-bottom: 1px solid var(--border); }
+.mentions-block:last-child { border-bottom: none; margin-bottom: 0; }
+.mentions-block h2 { font-size: 14px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--brown); margin-bottom: 14px; }
+.mentions-block p { font-size: 15px; color: var(--ink); line-height: 1.8; margin-bottom: 8px; }
+.mentions-block p:last-child { margin-bottom: 0; }
+.mentions-block .info-row { display: flex; gap: 8px; font-size: 15px; color: var(--ink); line-height: 1.8; }
+.mentions-block .info-row span:first-child { color: var(--muted); min-width: 180px; font-size: 13px; }
+
+.footer-dark { background: var(--dark); }
+.footer-bar { border-top: 1px solid rgba(255,255,255,.07); padding: 24px; max-width: 1120px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.footer-bar-logo { font-family: var(--playpen); font-weight: 800; font-size: 18px; color: var(--brown); }
+.footer-links { display: flex; gap: 20px; list-style: none; flex-wrap: wrap; }
+.footer-links a { font-size: 12px; color: rgba(255,255,255,.28); text-decoration: none; transition: color .15s; }
+.footer-links a:hover { color: rgba(255,255,255,.6); }
+.footer-copy { font-size: 12px; color: rgba(255,255,255,.2); }
+
+@media (max-width: 768px) {
+  nav { padding: 0 16px; height: 54px; }
+  .nav-center { display: none; }
+  .burger { display: flex; }
+  .nav-logo { font-size: 20px; }
+  .nav-cta { font-size: 12px; padding: 7px 14px; }
+  .page-wrap { padding: 88px 16px 72px; }
+  .mentions-block .info-row { flex-direction: column; gap: 2px; }
+  .mentions-block .info-row span:first-child { min-width: unset; }
+  .footer-bar { flex-direction: column; text-align: center; padding: 20px 16px; }
+  .footer-links { justify-content: center; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">Nola.</a>
+  <ul class="nav-center">
+    <li><a href="/#why">Le concept</a></li>
+    <li><a href="/#how">Comment ça se passe</a></li>
+    <li><a href="/manifeste">Manifeste</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <a href="https://cheznola.fillout.com/booking" class="nav-cta" target="_blank" rel="noopener">Rejoindre Nola →</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/#why">Le concept <span>→</span></a>
+  <a href="/#how">Comment ça se passe <span>→</span></a>
+  <a href="/manifeste">Manifeste <span>→</span></a>
+  <a href="/charte">Charte <span>→</span></a>
+  <a href="https://cheznola.fillout.com/booking" class="mobile-cta" target="_blank" rel="noopener">Rejoindre Nola →</a>
+</div>
+
+<div class="page-wrap">
+  <span class="page-eyebrow">Informations légales</span>
+  <h1 class="page-title">Mentions légales</h1>
+  <p class="page-lead">Le site cheznola.fr est édité par l'association Nola, association loi 1901 à but non lucratif.</p>
+  <div class="page-divider"></div>
+
+  <div class="mentions-block">
+    <h2>Éditeur</h2>
+    <div class="info-row"><span>Nom de l'association</span><span>Nola</span></div>
+    <div class="info-row"><span>Statut</span><span>Association loi 1901 à but non lucratif</span></div>
+    <div class="info-row"><span>Siège social</span><span>78400 Chatou, France</span></div>
+    <div class="info-row"><span>Adresse email</span><span><a href="mailto:hello@cheznola.fr" style="color:var(--brown);text-decoration:underline;text-underline-offset:3px;">hello@cheznola.fr</a></span></div>
+  </div>
+
+  <div class="mentions-block">
+    <h2>Responsable de la publication</h2>
+    <div class="info-row"><span>Nom</span><span>Emmanuel Di Marco</span></div>
+    <div class="info-row"><span>Qualité</span><span>Président de l'association</span></div>
+  </div>
+
+  <div class="mentions-block">
+    <h2>Hébergement</h2>
+    <div class="info-row"><span>Hébergeur</span><span>Vercel Inc.</span></div>
+    <div class="info-row"><span>Adresse</span><span>340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis</span></div>
+    <div class="info-row"><span>Site</span><span><a href="https://vercel.com" target="_blank" rel="noopener" style="color:var(--brown);text-decoration:underline;text-underline-offset:3px;">vercel.com</a></span></div>
+  </div>
+
+  <div class="mentions-block">
+    <h2>Services tiers</h2>
+    <p>Le site utilise des services tiers (formulaires, statistiques) susceptibles de collecter des données personnelles dans le cadre strict de l'activité de l'association.</p>
+    <p>Pour en savoir plus sur le traitement de vos données : <a href="/confidentialite" style="color:var(--brown);text-decoration:underline;text-underline-offset:3px;">politique de confidentialité</a>.</p>
+  </div>
+</div>
+
+<div class="footer-dark">
+  <div class="footer-bar">
+    <span class="footer-bar-logo">Nola.</span>
+    <ul class="footer-links">
+      <li><a href="/manifeste">Manifeste</a></li>
+      <li><a href="/charte">Charte</a></li>
+      <li><a href="/conditions">Conditions</a></li>
+      <li><a href="/confidentialite">Confidentialité</a></li>
+      <li><a href="/mentions">Mentions légales</a></li>
+      <li><a href="mailto:hello@cheznola.fr">Contact</a></li>
+    </ul>
+    <span class="footer-copy">© 2025 Nola · Association loi 1901</span>
+  </div>
+</div>
+
+<script>
+(function () {
+  var burger = document.getElementById('burger');
+  var menu = document.getElementById('mobileMenu');
+  if (!burger || !menu) return;
+  burger.addEventListener('click', function () {
+    var open = menu.classList.toggle('open');
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', String(open));
+  });
+  menu.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      menu.classList.remove('open');
+      burger.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+</body>
+</html>
